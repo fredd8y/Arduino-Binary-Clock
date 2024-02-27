@@ -46,7 +46,7 @@ void showNumber(int h, int m, int s) {
 
 void setup() {
   Wire.begin();
-  Serial.begin(57600);
+  rtc.setClockMode(false);
   pinMode(LATCH_PIN, OUTPUT);
   pinMode(CLOCK_PIN, OUTPUT);
   pinMode(DATA_PIN, OUTPUT);
